@@ -15,10 +15,31 @@
 	},
 	"plugins": ["@typescript-eslint"],
 	"rules": {
+		"camelcase":"off",
+		"@typescript-eslint/naming-convention": [
+			"error",
+			{
+				//"selector": "property",
+				"selector": [
+					"classProperty",
+					"objectLiteralProperty",
+					"typeProperty",
+					"classMethod",
+					"objectLiteralMethod",
+					"typeMethod",
+					"accessor",
+					"enumMember"
+				],
+				"format": null,
+				"leadingUnderscore": "allowSingleOrDouble"
+			}
+		],
 		"class-methods-use-this": "off",
 		"prettier/prettier": [
 			"error",
 			{
+				"useTabs": false,
+				"tabWidth": 2,
 				"printWidth": 80,
 				"semi": true,
 				"singleQuote": true,
