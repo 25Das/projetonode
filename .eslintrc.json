@@ -15,6 +15,7 @@
 	},
 	"plugins": ["@typescript-eslint"],
 	"rules": {
+		"class-methods-use-this": "off",
 		"prettier/prettier": [
 			"error",
 			{
