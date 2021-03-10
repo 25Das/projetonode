@@ -34,11 +34,12 @@
 				"leadingUnderscore": "allowSingleOrDouble"
 			}
 		],
+		"no-tabs": ["error", { "allowTabIndentation": true}],
 		"class-methods-use-this": "off",
 		"prettier/prettier": [
 			"error",
 			{
-				"useTabs": false,
+				"useTabs": true,
 				"tabWidth": 2,
 				"printWidth": 80,
 				"semi": true,
